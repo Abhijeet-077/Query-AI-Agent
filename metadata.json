@@ -1,0 +1,5 @@
+{
+  "name": "AI Document Entity Extractor",
+  "description": "An advanced web application that uses AI to extract entities (like Organisation, Name, PAN) and their relationships from uploaded documents. The results can be viewed and exported as a CSV file.",
+  "requestFramePermissions": []
+}
