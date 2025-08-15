@@ -376,7 +376,7 @@
                 setDocumentText(text);
               } else if (file.type === 'application/pdf') {
                 const pdfjsLib = await import('pdfjs-dist');
-                pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.mjs`;
+                pdfjsLib.GlobalWorkerOptions.workerSrc = `https://esm.sh/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.mjs`;
                 const doc = await pdfjsLib.getDocument(URL.createObjectURL(file)).promise;
                 const numPages = doc.numPages;
                 let fullText = '';
